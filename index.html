@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do</title>
+</head>
+<body>
+    <div class="container">
+        <button class="dark-mode"><i class="fa-solid fa-sun"></i></button>
+        <h1>Tasks-List 2023</h1>
+        <div class="form">
+            <input type="text" name="add-task" id="add-task">
+            <button class="submit">Add task</button>
+        </div>
+        <hr>
+        <div class="added">
+            <h3>Today's Tasks <i class="fa-solid fa-arrow-down"></i></h3>
+            <ul class="tasks">
+                <!-- <li>
+                    <input type="checkbox" name="completed" id="completed">
+                    <input type="text" name="task" id="task" readonly>
+                    <input type="button" value="Edit" id="Edit">
+                    <input type="button" value="Delete" id="Delete">
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

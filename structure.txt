@@ -1,0 +1,18 @@
+Create log-in and sign-up for 2048 game and store their scores in local storage 
+Also use logout and page rendering-thing on that
+    location.replace("./to-do.html");
+Use encryption function of JS to encrypt the password and decrypt them while using it.
+Prevent user from going back using previous page
+   function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null }; 
+
+
+Here just simply craeate a to-do or scoring thing 
+Use swal for pop-ups or alerts
+ Add new task
+Delete task
+Mark task as completed
+Edit task
+Sort tasks by time
+Search tasks by name

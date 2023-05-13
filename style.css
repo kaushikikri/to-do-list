@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color: #8294C4;
+    --card-background-color:white;
+    --primary-color:rgb(49, 46, 46,.7);
+    --margin:25px;
+    --secondary-margin:10px;
+    --btn-primary-color:#19A7CE;
+    --btn-secoondary-color:#146C94;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    background: var(--background-color);
+    color:var(--primary-color);
+    height: 100vh;
+    text-transform: capitalize;
+}
+
+input{
+    height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0,.7);
+    border: 2px groove var(--background-color);
+    border-radius: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    background: var(--background-color);
+    border-radius: 5px;
+    /* max-height: fit-content; */
+    padding:10px ;
+    margin: var(--secondary-margin);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--card-background-color);
+    padding: var(--margin);
+    margin: auto;
+    width: 90vmin;
+    height: auto;
+    border-radius: 5px;
+}
+
+.dark-mode{
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    background-color: var(--card-background-color);
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.dark{
+    --background-color: black;
+    --card-background-color:rgb(44, 43, 43);
+    --primary-color:white;
+}
+
+.form #add-task,#task{
+    width: 80%;
+    text-transform: capitalize;
+}
+
+.submit{
+    background-color: var(--btn-primary-color);
+    border: none ;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.submit:hover{
+    background-color: var(--btn-secoondary-color);
+}
+
+#Delete{
+    background: var(--btn-secondary-color);
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+    transition: all 0.2s ease-in;
+}
+
+#Delete:hover{
+    background: var(--btn-secoondary-color);
+}
+
+#completed{
+
+    width: 20px;
+    /* padding-top: var(--secondary-margin); */
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+#task{
+    border: none;
+    border-radius: 5px;
+    padding-inline:5px ;
+}
